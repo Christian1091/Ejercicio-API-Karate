@@ -13,7 +13,7 @@ class PetRunner {
 
         Results results = Runner.path("classpath:features")
                 .outputCucumberJson(true)
-                .reportDir("target/karate-reports")   // 🔥 ESTO ES LO QUE TE FALTA
+                .reportDir("target/karate-reports")
                 .parallel(1);
 
         System.out.println("Report dir: " + results.getReportDir());
