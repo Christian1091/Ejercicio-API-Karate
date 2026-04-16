@@ -7,5 +7,11 @@ function fn() {
         pet: '/pet',
         findByStatus: '/pet/findByStatus'
     };
+
+    karate.configure('report', {
+        showLog: true,
+        showAllSteps: false
+    });
+
     return config;
 }

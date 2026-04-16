@@ -1,10 +1,23 @@
 package runners;
 
-import com.intuit.karate.junit5.Karate;
+import com.intuit.karate.Results;
+import com.intuit.karate.Runner;
+import org.junit.jupiter.api.Test;
 
-public class PetRunner {
-    @Karate.Test
-    Karate testPetStore() {
-        return Karate.run("classpath:features/petstore.feature");
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class PetRunner {
+
+    @Test
+    void testAll() {
+
+        Results results = Runner.path("classpath:features")
+                .outputCucumberJson(true)
+                .reportDir("target/karate-reports")   // 🔥 ESTO ES LO QUE TE FALTA
+                .parallel(1);
+
+        System.out.println("Report dir: " + results.getReportDir());
+
+        assertEquals(0, results.getFailCount(), results.getErrorMessages());
     }
 }

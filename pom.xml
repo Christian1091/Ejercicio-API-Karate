@@ -33,9 +33,31 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.2</version>
+                <version>3.2.5</version>
+                <configuration>
+                    <includes>
+                        <include>**/*Runner.java</include>
+                    </includes>
+                </configuration>
             </plugin>
 
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.3.0</version>
+                <executions>
+                    <execution>
+                        <id>generate-report</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>CucumberReportGenerator</mainClass>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
