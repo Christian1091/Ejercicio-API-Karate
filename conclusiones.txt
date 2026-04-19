@@ -1,0 +1,35 @@
+Conclusiones - Hallazgos 
+
+Automatización API
+
+Hallazgos:
+
+- El proyecto de automatización fue creado y configurado correctamente desde el inicio.
+- Se utilizó Karate para las pruebas, lo que permitió aprovechar su enfoque sencillo y eficiente para el diseño y ejecución de pruebas de
+API, durante la ejecución de las pruebas, no se presentaron fallos críticos. Los escenarios definidos en las características de Cucumber
+fueron procesados de manera adecuada, logrando resultados satisfactorios en cada uno de los casos de prueba.
+- Durante las primeras ejecuciones, se presentó un inconveniente al momento de generar el reporte en formato Cucumber, este problema se
+debió a una mala configuración de la ruta en la que se debía generar el archivo de salida. Este error se corrigió rápidamente al ajustar
+la dirección correcta del directorio de salida, lo que permitió la correcta generación de los informes de pruebas.
+- La integración de Karate con Cucumber fue exitosa, permitiendo que los reportes generados fueran claros y visualmente comprensibles,
+facilitando el análisis de los resultados de las pruebas.
+
+Conclusiones:
+
+Luego de resolver el ejercicio en las herramientas solicitados puedo concluir que la implementación de la automatización de pruebas con
+Karate ha sido eficaz y ha permitido reducir el esfuerzo manual necesario para probar la API, la configuración y ejecución de las pruebas
+se completaron de manera fluida, lo que sugiere que Karate es una herramienta potente y de fácil integración para proyectos de
+automatización de pruebas.
+
+Cabe mencionar que el pequeño inconveniente con la generación del reporte de Cucumber se resolvió de manera rápida y eficiente, esto
+demuestra que, aunque pueden surgir problemas técnicos durante la configuración, la solución y ajustes necesarios son accesibles, lo que
+minimiza el impacto en el progreso general del proyecto.
+
+Finalmente, este proyecto ha establecido una base sólida para la expansión futura de la automatización de pruebas. Karate ha demostrado
+ser una herramienta altamente efectiva, no solo por su capacidad de integración sencilla con otras herramientas y servicios, sino también
+por su flexibilidad para adaptarse a un sistema en crecimiento. A medida que el sistema se expanda o se incorporen nuevas funcionalidades,
+la escalabilidad de las pruebas automatizadas será clave. Además, Karate ha probado ser ideal para la automatización de pruebas de API,
+permitiendo realizar pruebas de endpoints de manera ágil y precisa. Sus capacidades para validar respuestas JSON, ejecutar pruebas en
+paralelo y gestionar de manera eficiente los datos de entrada han sido factores determinantes que contribuyeron al éxito de este proyecto.
+
+
