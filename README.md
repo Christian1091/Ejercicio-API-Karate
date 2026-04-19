@@ -4,7 +4,7 @@ Este repositorio contiene un proyecto de pruebas automatizadas utilizando **Kara
 
 ## 1. Prerrequisitos
 
-Antes de comenzar, asegúrate de tener configurado lo siguiente en tu máquina local:
+Antes de comenzar, asegúrate de tener configurado lo siguiente en la máquina local:
 
 - **Sistema operativo**: Windows 11
 - **IDE**: [IntelliJ IDEA](https://www.jetbrains.com/idea/) versión 2024.2.4
@@ -14,7 +14,7 @@ Antes de comenzar, asegúrate de tener configurado lo siguiente en tu máquina l
 
 ### Verificación de versiones instaladas
 
-Para verificar que tienes las versiones correctas de **Java** y **Maven** instaladas, ejecuta los siguientes comandos en tu terminal:
+Para verificar que se tenga las versiones correctas de **Java** y **Maven** instaladas, ejecutar los siguientes comandos en la terminal:
 
 ```bash
 mvn -version
@@ -23,7 +23,7 @@ java -version
 
 ## 2. Comandos de instalación
 
-Para instalar las dependencias necesarias en tu máquina local, sigue los pasos a continuación:
+Para instalar las dependencias necesarias en la máquina local, seguir los pasos a continuación:
 
 **2.1 Clonar el repositorio**
 ```bash
@@ -50,11 +50,12 @@ mvn clean verify -q
 
 ## 4. Información adicional
 
-**Reportes:** Se genera reportes en cucumber detallados de las pruebas ejecutadas, que puedes revisar para obtener información sobre el estado de cada prueba, los reportes se encuentran en el directorio **target/karate-reports/cucumber-html-reports/overview-features.html** dentro del proyecto.
+**Reportes** 
+Se genera reportes en cucumber detallados de las pruebas ejecutadas, que puedes revisar para obtener información sobre el estado de cada prueba, los reportes se encuentran en el directorio **target/karate-reports/cucumber-html-reports/overview-features.html** dentro del proyecto.
 
 **Ejecución de pruebas en CI**
 
-Para que las pruebas se ejecuten automáticamente en GitHub Actions cada vez que se realice un push en la rama master o un pull request hacia la misma, se disparará automáticamente el flujo de trabajo de CI, que ejecutará la prueba en el navegador Firefox y en modo headless.
+Para que las pruebas se ejecuten automáticamente en GitHub Actions cada vez que se realice un push en la rama master o un pull request hacia la misma, se disparará automáticamente el flujo de trabajo de CI, que ejecutará la prueba.
 
 **Estructura del proyecto**
 ```markdown
